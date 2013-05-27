@@ -1,0 +1,5 @@
+D:\liguang\CODE\EF\EFDemo\SQ\bin\Debug\SQ.dll
+D:\liguang\CODE\EF\EFDemo\SQ\bin\Debug\SQ.pdb
+D:\liguang\CODE\EF\EFDemo\SQ\obj\Debug\ResolveAssemblyReference.cache
+D:\liguang\CODE\EF\EFDemo\SQ\obj\Debug\SQ.dll
+D:\liguang\CODE\EF\EFDemo\SQ\obj\Debug\SQ.pdb
