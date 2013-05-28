@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.IO;
 using System.Xml.Serialization;
 using System.Xml;
-
 /********
-* XML工具类，通过LINQ TO XML进行对象的序列化以及反序列化
+* XML工具类，包括序列化反序列化XML
 * *******/
 namespace SQ.Helper
 {
@@ -20,7 +17,6 @@ namespace SQ.Helper
                 throw new ArgumentNullException("o");
             if (encoding == null)
                 throw new ArgumentNullException("encoding");
-
             XmlSerializer serializer = new XmlSerializer(o.GetType());
 
             XmlWriterSettings settings = new XmlWriterSettings();
@@ -109,7 +105,7 @@ namespace SQ.Helper
         /// 从流中反序列化对象
         /// </summary>
         /// <typeparam name="T">结果对象类型</typeparam>
-        /// <param name="s">包含对象的XML字符串</param>
+        /// <param name="stream">包含对象的XML字节流</param>
         /// <param name="encoding">编码方式</param>
         /// <returns>反序列化得到的对象</returns>
         public static T XmlDeserialize<T>(Stream stream, Encoding encoding)
